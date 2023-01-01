@@ -8,18 +8,18 @@ import 'presentation/search_screen.dart';
 final GoRouter router = GoRouter(routes: [
   GoRoute(
     path: "/",
-    builder: (context, state) => const HomeScreen(),
+    builder: (context, state) => HomeScreen(),
   ),
   GoRoute(
     path: "/search",
-    builder: (context, state) => const SearchScreen(),
+    builder: (context, state) => SearchScreen(),
   ),
   GoRoute(
     path: "/preference",
-    builder: (context, state) => const PreferenceScreen(),
+    builder: (context, state) => PreferenceScreen(),
   ),
   GoRoute(
     path: "/about",
-    builder: (context, state) => const AboutScreen(),
+    builder: (context, state) => AboutScreen(),
   ),
 ]);

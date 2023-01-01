@@ -1,21 +1,30 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/presentation/home_screen.dart';
-import 'package:flutter_application_1/routes.dart';
+import 'package:flutter_application_1/util/user_preferences.dart';
 
-void main() {
-  runApp(const MyApp());
+import 'package:flutter_application_1/routes.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
+
+Future<void> main() async {
+  await UserSimplePreferences.init();
+
+  runApp(ProviderScope(child: MyApp()));
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+final themeProvider =
+    StateProvider<bool>((ref) => UserSimplePreferences.getTheme());
+
+class MyApp extends ConsumerWidget {
+  MyApp({super.key});
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context, WidgetRef ref) {
+    bool darkTheme = ref.watch(themeProvider);
     return MaterialApp.router(
       title: 'Univeristy Application',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        colorScheme: const ColorScheme.light(),
+        colorScheme:
+            darkTheme ? const ColorScheme.dark() : const ColorScheme.light(),
       ),
       routerConfig: router,
     );

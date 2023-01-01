@@ -38,6 +38,10 @@ dependencies:
   cupertino_icons: ^1.0.2
   go_router: ^6.0.0
   network_image_search: ^1.0.0
+  shared_preferences: ^2.0.15
+  flutter_riverpod: ^2.1.3
+  http: ^0.13.5
+  sqflite: ^2.2.2
 
 dev_dependencies:
   flutter_test:

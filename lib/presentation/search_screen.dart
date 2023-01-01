@@ -1,6 +1,4 @@
 import 'package:flutter/cupertino.dart';
-import 'package:flutter/src/widgets/container.dart';
-import 'package:flutter/src/widgets/framework.dart';
 
 import 'app_scaffold.dart';
 
@@ -15,7 +13,7 @@ class _SearchScreenState extends State<SearchScreen> {
   @override
   Widget build(BuildContext context) {
     return AppScaffold(
-      child: Text("test"),
+      child: Container(),
     );
   }
 }

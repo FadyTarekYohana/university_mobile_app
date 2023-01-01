@@ -11,8 +11,8 @@ class AboutScreen extends StatelessWidget {
     return AppScaffold(
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.center,
-        children: [
-          const Padding(
+        children: const [
+          Padding(
             padding: EdgeInsets.all(15.0),
             child: Unsplash(
               height: 200,
@@ -21,11 +21,11 @@ class AboutScreen extends StatelessWidget {
               subcategory: "code",
             ),
           ),
-          const Text(
+          Text(
             "Fady Tarek Yohana",
             style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
           ),
-          const Text(
+          Text(
             "2019/00456",
             style: TextStyle(fontWeight: FontWeight.bold),
           ),
