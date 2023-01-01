@@ -1,11 +1,11 @@
 * Flutter mobile app that displays a list of universities in a given country  
 * Home Screen:  
-  *Display the list of universities in a Listview or any other scrollable widget of your choice  
-  *Next to each university name, include a favorite interactive icon (store the selection using
+  * Display the list of universities in a Listview or any other scrollable widget of your choice  
+  * Next to each university name, include a favorite interactive icon (store the selection using
     sqlite)  
-  *Support displaying the items in multiple columns GridView for wide screen sizes (landscape
+  * Support displaying the items in multiple columns GridView for wide screen sizes (landscape
     layout or in tablets)  
-  *Each item should be clickable to open a university detail screen with a random image of a
+  * Each item should be clickable to open a university detail screen with a random image of a
     university building (you can use network_image_search package) (any random image will be
     ok) and details (name, website)  
 * About screen: with basic developer info (for example, your photo, name, and student id)  
